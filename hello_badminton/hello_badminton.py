@@ -74,7 +74,7 @@ def get_server_delay() -> float:
     def _get_server_delay():
         local_time = time.time()
         response = requests.head(
-            "http://www.tyys.zju.edu.cn/venue-server/api/reservation/order/submit",
+            "http://tyys.zju.edu.cn/venue-server/api/reservation/order/submit",
             verify=False,
             impersonate="chrome110",
         )
